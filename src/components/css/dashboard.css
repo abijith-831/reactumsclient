@@ -1,0 +1,46 @@
+
+.admin-container {
+    min-height: 100vh; 
+    background-image: url('/src/assets/banner-bg.png'); 
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    display: flex;
+    flex-direction: column;
+  }
+
+.table {
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  overflow: hidden;
+  
+}  
+
+.table th {
+  background-color: #343a40;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+.table td {
+  text-align: center;
+  background-color: #ffffff;
+  color: #333;
+}
+
+.add-user-btn {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-user-btn:hover {
+  background-color: #0056b3;
+}

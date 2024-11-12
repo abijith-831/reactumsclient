@@ -1,0 +1,116 @@
+.home-container {
+    background-image: url('../../assets//banner-bg.png');
+    min-height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+.brand-name {
+    font-weight: bold;
+    color: #333;
+    margin-left: 8px;
+}
+.navbar, main {
+    background: transparent;
+    position: relative; 
+    z-index: 2;
+    padding: 30px;
+}
+
+
+.banner-img img{
+    animation: updown 3s linear infinite;
+}
+@keyframes updown {
+    0%{
+        transform: translateY(-20px);
+    }
+    50%{
+        transform: translateY(20px);
+    }
+    100%{
+        transform: translateY(-20px);
+    }
+}
+
+.navbar-nav .btn {
+    min-width: 120px;
+}
+
+.welcome-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.welcome-section h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+.welcome-section .lead {
+    font-size: 1.25rem;
+    color: #555;
+}
+
+
+@media (max-width: 768px) {
+    .welcome-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .welcome-section .lead {
+        font-size: 1rem;
+    }
+
+    .navbar-nav .btn {
+        min-width: 100px;
+        font-size: 0.9rem;
+    }
+}
+
+.modal-overlay {
+    position: fixed;
+    background-color: rgba(0,0,0,0.3);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 500px;
+}
+
+.modal img{
+    width: 300px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px; 
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #000; 
+    padding: 0;
+}

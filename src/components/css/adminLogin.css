@@ -1,0 +1,84 @@
+
+.login-container {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #4fb7fd, #b855df);
+    padding: 20px;
+  }
+  
+  
+  .card {
+    width: 100%;
+    max-width: 850px;
+    border: none;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Form Labels */
+  .form-label {
+    font-weight: 600;
+  }
+  
+  /* Input Fields */
+  .form-control:focus {
+    border-color: #9b59b6;
+    box-shadow: 0 0 0 0.2rem rgba(155, 89, 182, 0.25);
+  }
+  
+  /* Submit Button */
+  .btn-primary {
+    background-color: #9b59b6;
+    border-color: #9b59b6;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #8e44ad;
+    border-color: #8e44ad;
+  }
+  
+  /* Links Styling */
+  .btn-link {
+    color: #9b59b6;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .btn-link:hover {
+    color: #8e44ad;
+    text-decoration: underline;
+  }
+  
+  a.text-decoration-none {
+    color: #9b59b6;
+    font-weight: 500;
+  }
+  
+  a.text-decoration-none:hover {
+    color: #8e44ad;
+    text-decoration: underline;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 576px) {
+    .card {
+      padding: 20px;
+    }
+  }
+  
+  
+  .Toastify__toast--error {
+    background: #ffffff; 
+    color: rgb(231, 12, 12);
+  }
+  
+  .Toastify__toast--success {
+    background: #ffffff; 
+    color: rgb(30, 255, 0);
+  }
